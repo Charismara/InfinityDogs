@@ -17,12 +17,18 @@ public class InfinityDogs {
 	public static final String NAME = "InfinityDogs";
 	public static final String VERSION = "1.0";
 
+	//Instance
 	@Instance(MODID)
 	public static InfinityDogs instance = new InfinityDogs();
-
+	
+	//Proxys
 	@SidedProxy(modId = MODID, serverSide = "de.blutmondgilde.infinitydogs.proxy.CommonProxy", clientSide = "de.blutmondgilde.infinitydogs.proxy.ClientProxy")
 	public static CommonProxy proxy = new CommonProxy();
 	
+	
+	
+	
+	//Initializations Phasen
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
 	}
